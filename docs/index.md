@@ -5,10 +5,10 @@ __*Contenidos del informe*__
 
 __*Pasos realizados para el desarrollo de la práctica*__
 * Algunas tareas a realizar previamente:
-        * Aceptar la tarea asignada a [GitHub Classroom](https://classroom.github.com/assignment-invitations/aeecb6b9d939b7fd914ea3c40d832362/status) asociada a esta práctica.
-        * Leer la [introducción a Markdown](https://guides.github.com/features/mastering-markdown/).Este es el lenguaje que se usará en el desarrollo del presente informe.
-        * Lectura del recurso [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages), ya que el presente informe se presentará a modo de una página web de GitHub. 
-        
+	* Aceptar la tarea asignada a [GitHub Classroom](https://classroom.github.com/assignment-invitations/aeecb6b9d939b7fd914ea3c40d832362/status) asociada a esta práctica.
+	* Leer la [introducción a Markdown](https://guides.github.com/features/mastering-markdown/).Este es el lenguaje que se usará en el desarrollo del presente informe.
+	* Lectura del recurso [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages), ya que el presente informe se presentará a modo de una página web de GitHub.
+      
 ## __Introducción y Objetivos__
 En esta llevaremos a cabo la instalación y la configuración del entorno de desarrollo que usaremos durante las prácticas, Visual Studio Code.
 
