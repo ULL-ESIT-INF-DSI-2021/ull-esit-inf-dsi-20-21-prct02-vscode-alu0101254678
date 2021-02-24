@@ -35,6 +35,8 @@ Una vez que tenemos code instalado podemos ejecutarlo en el escritorio o en el m
 
 Este es el aspecto que tendría code según lo ejecutamos.
 
+![captura_code](/img/captura_code.png)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
