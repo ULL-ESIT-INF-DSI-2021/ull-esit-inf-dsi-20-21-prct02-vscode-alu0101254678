@@ -1,5 +1,5 @@
 # Desarrollo de Sistemas Informáticos
-## Práctica 2 - Instalación y COnfiguración de Visual Studio Code
+## Práctica 2 - Instalación y Configuración de Visual Studio Code
 ## Yago Pérez Molanes
 __*Contenidos del informe*__
 
@@ -13,6 +13,26 @@ __*Pasos realizados para el desarrollo de la práctica*__
 En esta llevaremos a cabo la instalación y la configuración del entorno de desarrollo que usaremos durante las prácticas, Visual Studio Code.
 
 Cuando finalicemos el desarrollo tendremos a punto el IDE para ayudarnos a realizar las siguientes prácticas.
+
+## __Instalación y funcionalidad de Visual Studio Code__
+El entorno de desarrollo que vamos a usar en las prácticas es [Visual Studio Code](https://code.visualstudio.com/).Lo primero que deberemos hacer será [instalarlo](https://code.visualstudio.com/docs/setup/setup-overview) en nuestra máquina local.
+
+Si tuvieramos una distribución Linux *Debian/Ubuntu* la instalación se reduciría a los siguientes comandos en una terminal:
+
+```markdown
+yago@yago-X541UJ:~$ sudo apt install code
+
+```
+Es posible que nos pida la contraseña de nuestra cuenta.
+También se puede hacer uso de *snap* para instalar code 
+
+```markdown
+yago@yago-X541UJ:~$ sudo snap install code --classic
+
+```
+
+Una vez que tenemos code instalado podemos ejecutarlo en el escritorio o en el menú de aplicaciones, o incluso con el comando *code*, en una terminal, a la vez que podemos indicarle como argumento alguno de los directorios sobre los que queremos trabajar.
+
 
 
 ## Welcome to GitHub Pages
