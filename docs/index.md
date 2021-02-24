@@ -35,7 +35,7 @@ Una vez que tenemos code instalado podemos ejecutarlo en el escritorio o en el m
 
 Este es el aspecto que tendría code según lo ejecutamos.
 
-![captura_code](/img/captura_code.png)
+![captura_code](../img/captura_code.png)
 
 ## Welcome to GitHub Pages
 
