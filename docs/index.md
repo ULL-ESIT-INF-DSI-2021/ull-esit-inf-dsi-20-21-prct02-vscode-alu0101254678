@@ -37,6 +37,17 @@ Este es el aspecto que tendría code según lo ejecutamos.
 
 ![captura_code_1](../img/captura_code_1.png)
 
+
+## __Conexión a una máquina virtual ssh con Visual Studio Code__
+Vamos a llevar a cabo la configuración necesaria para [conectarnos](https://code.visualstudio.com/docs/remote/ssh-tutorial) desde Visual Studio Code a la máquina virtual del *IaaS*, a través de una conexión *ssh*.
+
+Recordamos que de la práctica anterior tenemos configurada la máquina virtual del IaaS, entonces podemos establecer una configuración VPN si no nos encontramos en la red universitaria y conectarnos por *ssh* en una terminal.
+
+Sin embargo también podemos hacerlo desde Visual Studio Code, a través de una [extensión](https://code.visualstudio.com/docs/editor/extension-gallery)
+
+Una extensión es una funcionalidad que se puede añadir a Visual Studio Code, nosotros vamos a instalar __Remote SSH__:
+![captura_code_3](../img/captura_code_3.png)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
