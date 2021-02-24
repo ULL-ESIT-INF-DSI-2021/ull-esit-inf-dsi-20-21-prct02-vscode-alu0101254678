@@ -33,7 +33,7 @@ yago@yago-X541UJ:~$ sudo snap install code --classic
 
 Una vez que tenemos code instalado podemos ejecutarlo en el escritorio o en el menú de aplicaciones, o incluso con el comando *code*, en una terminal, a la vez que podemos indicarle como argumento alguno de los directorios sobre los que queremos trabajar.
 
-
+Este es el aspecto que tendría code según lo ejecutamos.
 
 ## Welcome to GitHub Pages
 
