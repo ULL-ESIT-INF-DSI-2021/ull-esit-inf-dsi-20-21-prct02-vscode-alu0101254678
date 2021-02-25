@@ -71,6 +71,9 @@ iaas-dsi15
 [~/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/docs(master)]$
 ```
 
+Como se puede observar, dicho comando devuelve el nombre de host de la máquina virtual remota. En la esquina inferior izquierda, se puede observar el nombre de la máquina virtual al que estamos concetados.
+
+![captura_code_4](../img/captura_code_4.png)
 
 ## Welcome to GitHub Pages
 
@@ -96,7 +99,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](../img/captura_code_4.png)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
