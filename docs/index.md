@@ -75,9 +75,90 @@ Como se puede observar, dicho comando devuelve el nombre de host de la máquina 
 
 ![captura_code_4](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/blob/master/img/captura_code_4.png)
 
-## Welcome to GitHub Pages 
+## __Live Share en Visual Studio Code (sesiones colaborativas)__
 
-You can use the [editor on GitHub](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Visual Studio Code permite trabajar con otras personas en tiempo real, gracias a la extensión [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) que se puede instalar desde Visual Studio Code.
+
+Cuando nos encontramos en una sesión remota, las extensiones que instalamos desde Code, se quedan ahí, es decir, en la máquina remota, por lo tanto no debemos olvidar en qué lugar estamos instalando las extensiones.
+
+Para instalar una extensión en la máquina local, primero deberemos desconectarnos de la máquina remota, y posteriormente en nuestra máquina podemos proceder a las instalaciones.
+
+Ahora podemos iniciar una sesión colaborativa con otras personas.
+
+## Nuestro primer proyecto en Typescript, "Hola mundo"
+
+Antes de nada, vamos a proceder con la instalación de dos extensiones que resultan muy útiles:
+
+* Vim. En el caso de que prefiramos el editor de texto.
+* ESlint. Permite realizar comprobaciones de estilo sobre ficheros en los que se incluya código fuente de JavaScript y TipeScript.
+
+Para ello, seguimos los pasos llevados para la instalación de otras extensiones, sin embargo, en el buscador tendremos que escribir *Vim* y *ESLint* y hacer click sobre *install*.
+
+[]()
+[]()
+
+Ahora, instalamos el compilador de *Typescript*, recordemos que no solo se trata de un lenguaje de programación, sino que también cumple las funciones de compilador.Para la instalación usaremos __npm__ que es el gestor de paquetes de *Node*.
+
+```markdown
+[~/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/docs(master)]$npm install --global typescript
+
+changed 1 package, and audited 2 packages in 3s
+
+found 0 vulnerabilities
+[~/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/docs(master)]$tsc --version
+Version 4.2.2
+[~/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/docs(master)]$
+```
+
+La opción *--global* permite instalar el paquete de forma global.
+
+Seguimos en la terminal de visual studio code, y ahora procedemos a escribir los siguientes comandos:
+
+```markdown
+[~()]$pwd
+/home/usuario
+[~()]$mkdir hello-world
+[~()]$cd hello-world/
+[~/hello-world()]$npm init --yes
+Wrote to /home/usuario/hello-world/package.json:
+
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+[~/hello-world()]$ls -lrtha
+total 12K
+drwxr-xr-x 13 usuario usuario 4,0K feb 25 17:53 ..
+-rw-rw-r--  1 usuario usuario  225 feb 25 17:53 package.json
+drwxrwxr-x  2 usuario usuario 4,0K feb 25 17:53 .
+[~/hello-world()]$
+```
+
+Con el comando *pwd* comprobamos el directorio en el que nos encontramos, seguidamente creamos con *mkdir* un directorio llamado *hello-world* que servirá para nuestro primer proyecto de prueba.
+
+Nos movemos a dicho directorio, y escribimos el comando __*npm init --yes*__ lo que inicia la creación de un fichero llamado __*package.json*__, en donde se gestionan las dependencias de desarrollo y ejecución del proyecto en forma de paquetes	de los que se indica la dependencia.La salida es la que se muestra al final.
+
+Desde Visual Studio Code, es posible abrir un directorio, en este caso, lo haremos con *hello-world*, para, desde el menú __*File*__, en el desplegable seleccionamos la opción __*Open Folder*__ y nuestro directorio, seguidamente se abrirá una instancia y podremos ver el contenido de dicho directorio.
+
+![]()
+
+También es posible añadir el directorio a un espacio de trabajo (*workspace*). Para ello, en el menú __*File*__ seleccionamos la opción __*Add folder to workspace*__, seleccionando el directorio propiamente nombrado.
+
+En el caso de que no hayamos creado un espacio de trabajo previamente, se creará uno nuevo y se añadirá el directorio al mismo. El espacio de trabajo se guarda con la opción __*Save Workspace as...*__ del menú __*File*__ escribiendo un nombre de fichero y pulsando __*OK*__.
+
+
+
+
 
 
 ### Markdown
