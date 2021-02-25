@@ -73,7 +73,7 @@ iaas-dsi15
 
 Como se puede observar, dicho comando devuelve el nombre de host de la máquina virtual remota. En la esquina inferior izquierda, se puede observar el nombre de la máquina virtual al que estamos concetados.
 
-![captura_code_4](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/blob/master/img/captura_code_4.png)
+![captura_code_4](../img/captura_code_4.png)
 
 ## __Live Share en Visual Studio Code (sesiones colaborativas)__
 
