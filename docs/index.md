@@ -48,11 +48,34 @@ Sin embargo también podemos hacerlo desde Visual Studio Code, a través de una 
 Una extensión es una funcionalidad que se puede añadir a Visual Studio Code, nosotros vamos a instalar __Remote SSH__:
 ![captura_code_3](../img/captura_code_3.png)
 
+Seguidamente, deberemos pulsar la tecla __F1__ o la combinación de teclas __Ctrl + Shift + P__, en el menú desplegable escribimos la orden __ssh__ y después __Connect to host...__.
+
+Recordamos de la anterior práctica que ya habíamos configurado el fichero que contenía la configuración de *ssh*, de ahí que podamos seleccionar el nombre que se indica de la máquina virtual. 
+
+En el caso de que no suceda lo anterior, podemos pulsar sobre la opción __Configure SSH Hosts...__ y elegimos la opción __~/.ssh/config__, incluyendo las siguientes líneas:
+
+```markdown
+Host iaas-dsi15
+  HostName iaas-dsi15
+  User usuario
+```
+Como vemos la máquina es *iaas-dsi-15* que es la que nos había asignado el *iaas* y el usuario no lo hemos cambiado, sino que lo hemos dejado por defecto.Sin embargo, para cada máquina esta tendrá un nombre distinto.
+
+Una vez seguidos estos pasos, lo siguiente será la opción __Connect to Host__ cuando volvamos a abrir el menú desplegable con __F1__, en este caso seleccionamos la máquina virtual, y nuestras credenciales, esto es, la contraseña para el usuario que hemos añadido en el fichero de configuración anterior.
+
+Esto originará una nueva ventana del Visual Studio Code, que iniciará la conexión remota, podemos abrir una terminal desde el propio Code, con la combinación de teclas __Ctrl + Shift +__.En la terminal podemos teclear el siguiente comando:
+
+```markdown
+[~/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/docs(master)]$hostname
+iaas-dsi15
+[~/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/docs(master)]$
+```
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
