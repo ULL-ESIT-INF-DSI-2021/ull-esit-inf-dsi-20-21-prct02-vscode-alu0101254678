@@ -85,7 +85,7 @@ Para instalar una extensión en la máquina local, primero deberemos desconectar
 
 Ahora podemos iniciar una sesión colaborativa con otras personas.
 
-## Nuestro primer proyecto en Typescript, "Hola mundo"
+## __Nuestro primer proyecto en Typescript, "Hola mundo"__
 
 Antes de nada, vamos a proceder con la instalación de dos extensiones que resultan muy útiles:
 
@@ -152,43 +152,92 @@ Desde Visual Studio Code, es posible abrir un directorio, en este caso, lo harem
 
 ![]()
 
-También es posible añadir el directorio a un espacio de trabajo (*workspace*). Para ello, en el menú __*File*__ seleccionamos la opción __*Add folder to workspace*__, seleccionando el directorio propiamente nombrado.
+También es posible añadir el directorio a un espacio de trabajo (*workspace*). Para ello, en el menú __*File*__ nos vamos a  la opción __*Add folder to workspace*__, seleccionando el directorio propiamente nombrado.
 
-En el caso de que no hayamos creado un espacio de trabajo previamente, se creará uno nuevo y se añadirá el directorio al mismo. El espacio de trabajo se guarda con la opción __*Save Workspace as...*__ del menú __*File*__ escribiendo un nombre de fichero y pulsando __*OK*__.
+En el caso de que no tengamos ningún espacio de trabajo creado previamente, se creará uno nuevo y se añadirá el directorio al mismo. Para guardar el espacio de trabajo se puede hacer seleccionando la opción __*Save Workspace as...*__ del menú __*File*__, escribiendo un nombre de fichero y pulsando sobre el botón __*OK*__.
 
-
-
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Creamos un nuevo fichero en el directorio *hello-world*, llamado __*tsconfig.json*__. Es posible hacerlo mediante la terminal de VS Code o el explorador situado a la izquierda.En este fichero es en donde se indican las opciones del compilador de Typscript.Vamos a incluir las siguientes líneas en dicho fichero y a pasar a explicarlas.
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](../img/captura_code_4.png)
+[~/hello-world()]$vim tsconfig.json 
+[~/hello-world()]$cat tsconfig.json 
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "CommonJS"
+  }
+}
+[~/hello-world()]$
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+La primera opción indica al compilador que queremos generar código en la última versión del estándar de *JavaScript*, y como es lógico, podemos indicar otro estándar de *JavaScript*.
 
-### Jekyll Themes
+En segundo lugar, especificamos el directorio de salida de los ficheros que generemos cuando compilemos el código fuente de Typescript a JavaScript, en este caso, __*dist*__ .En tercer lugar, estamos diciéndole al compilador donde queremos que analice el código fuente, esto es, en __*/src*__.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Por último, se indica un estándar para cargar código fuente desde ficheros independientes.
 
-### Support or Contact
+Ahora, añadiremos un fichero con código en *TypeScript*.Ejecutamos los siguientes comandos en la terminal de VS Code:
+```markdown
+[~/hello-world()]$pwd
+/home/usuario/hello-world
+[~/hello-world()]$mkdir src
+[~/hello-world()]$ls
+package.json  src  tsconfig.json
+[~/hello-world()]$cd src
+[~/hello-world/src()]$touch index.ts
+[~/hello-world/src()]$ls
+index.ts
+[~/hello-world/src()]$
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+En este punto hemos creado el fichero de código fuente, con el nombre *index.ts*, añadimos las siguientes líneas de código al mismo:
+
+```Typescript
+let myString: string = "Hola Mundo";
+console.log(myString);
+```
+
+En la terminal de Visual Studio Code, podemos compilar nuestro fichero con el sigueinte comando:
+
+```markdown
+[~/hello-world()]$tsc
+```
+
+Recordamos que en las opciones de compilación habíamos específicado el directorio de salida, por lo tanto en el directorio */dist* tendremos el fichero __*index.js*__.
+
+```markdown
+[~/hello-world()]$diff dist/index.js src/index.ts 
+1c1
+< let myString = "Hola Mundo";
+---
+> let myString: string = "Hola Mundo";
+```
+
+Con el comando __*diff*__ comprobamos las diferencias que existen entre dos ficheros. Encontramos que la principal diferencia está en la declaración de la variable __*my string*__.
+
+Una de las características de *TypeScript*, es la declaración de datos estáticos o *tipado* estático, es decir que se puede indicar el tipo de una variable, por ejemplo si quieremos que sea un entero, una cadena de caracteres, un booleano...
+
+De esta forma se pueden evitar los problemas que ocurren cuando el tipo de una variable se decide en tiempo de ejecución, como sucede en *JavaScript*.
+
+Por último, solo nos queda ejecutar el fichero que se ha generado tras la compilación, __*index,js*__, que, recordemos que podemos ejecutarlo.
+
+Esto se realiza con el comando *node* y la ruta al fichero.
+
+```markdown
+[~/hello-world()]$node dist/index.js
+Hola Mundo
+[~/hello-world()]$
+```
+
+## __Conclusiones__
+
+## __Bibliografía__
+
+
+
+
+
+
+
