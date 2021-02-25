@@ -35,7 +35,7 @@ Una vez que tenemos code instalado podemos ejecutarlo en el escritorio o en el m
 
 Este es el aspecto que tendría code según lo ejecutamos.
 
-![captura_code_1](../img/captura_code_1.png)
+![captura_code_1](/img/captura_code_1.png)
 
 
 ## __Conexión a una máquina virtual ssh con Visual Studio Code__
@@ -46,7 +46,7 @@ Recordamos que de la práctica anterior tenemos configurada la máquina virtual 
 Sin embargo también podemos hacerlo desde Visual Studio Code, a través de una [extensión](https://code.visualstudio.com/docs/editor/extension-gallery)
 
 Una extensión es una funcionalidad que se puede añadir a Visual Studio Code, nosotros vamos a instalar __Remote SSH__:
-![captura_code_3](../img/captura_code_3.png)
+![captura_code_3](/img/captura_code_3.png)
 
 Seguidamente, deberemos pulsar la tecla __F1__ o la combinación de teclas __Ctrl + Shift + P__, en el menú desplegable escribimos la orden __ssh__ y después __Connect to host...__.
 
@@ -73,7 +73,7 @@ iaas-dsi15
 
 Como se puede observar, dicho comando devuelve el nombre de host de la máquina virtual remota. En la esquina inferior izquierda, se puede observar el nombre de la máquina virtual al que estamos concetados.
 
-![captura_code_4](../img/captura_code_4.png)
+![captura_code_4](/img/captura_code_4.png)
 
 ## __Live Share en Visual Studio Code (sesiones colaborativas)__
 
