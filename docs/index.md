@@ -94,7 +94,7 @@ Antes de nada, vamos a proceder con la instalación de dos extensiones que resul
 
 Para ello, seguimos los pasos llevados para la instalación de otras extensiones, sin embargo, en el buscador tendremos que escribir *Vim* y *ESLint* y hacer click sobre *install*.
 
-[]()
+![captura_extension_vim](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/master/img/captura_extension_vim.png)
 
 Ahora, instalamos el compilador de *Typescript*, recordemos que no solo se trata de un lenguaje de programación, sino que también cumple las funciones de compilador.Para la instalación usaremos __npm__ que es el gestor de paquetes de *Node*.
 
