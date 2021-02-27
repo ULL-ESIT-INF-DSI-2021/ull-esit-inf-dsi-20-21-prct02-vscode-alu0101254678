@@ -10,7 +10,7 @@ __*Pasos realizados para el desarrollo de la práctica*__
 	* Lectura del recurso [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages), ya que el presente informe se presentará a modo de una página web de GitHub.
       
 ## __Introducción y Objetivos__
-En esta llevaremos a cabo la instalación y la configuración del entorno de desarrollo que usaremos durante las prácticas, Visual Studio Code.
+En esta práctica llevaremos a cabo la instalación y la configuración del entorno de desarrollo que usaremos durante las prácticas, Visual Studio Code.
 
 Cuando finalicemos el desarrollo tendremos a punto el IDE para ayudarnos a realizar las siguientes prácticas.
 
@@ -46,7 +46,7 @@ Recordamos que de la práctica anterior tenemos configurada la máquina virtual 
 Sin embargo también podemos hacerlo desde Visual Studio Code, a través de una [extensión](https://code.visualstudio.com/docs/editor/extension-gallery)
 
 Una extensión es una funcionalidad que se puede añadir a Visual Studio Code, nosotros vamos a instalar __Remote SSH__:
-![captura_code_3](/img/captura_code_3.png)
+![captura_code_3](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/master/img/captura_code_3.png)
 
 Seguidamente, deberemos pulsar la tecla __F1__ o la combinación de teclas __Ctrl + Shift + P__, en el menú desplegable escribimos la orden __ssh__ y después __Connect to host...__.
 
@@ -73,7 +73,7 @@ iaas-dsi15
 
 Como se puede observar, dicho comando devuelve el nombre de host de la máquina virtual remota. En la esquina inferior izquierda, se puede observar el nombre de la máquina virtual al que estamos concetados.
 
-![captura_code_4](/img/captura_code_4.png)
+![captura_code_4](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/master/img/captura_code_4.png)
 
 ## __Live Share en Visual Studio Code (sesiones colaborativas)__
 
@@ -94,7 +94,6 @@ Antes de nada, vamos a proceder con la instalación de dos extensiones que resul
 
 Para ello, seguimos los pasos llevados para la instalación de otras extensiones, sin embargo, en el buscador tendremos que escribir *Vim* y *ESLint* y hacer click sobre *install*.
 
-[]()
 []()
 
 Ahora, instalamos el compilador de *Typescript*, recordemos que no solo se trata de un lenguaje de programación, sino que también cumple las funciones de compilador.Para la instalación usaremos __npm__ que es el gestor de paquetes de *Node*.
@@ -149,8 +148,6 @@ Con el comando *pwd* comprobamos el directorio en el que nos encontramos, seguid
 Nos movemos a dicho directorio, y escribimos el comando __*npm init --yes*__ lo que inicia la creación de un fichero llamado __*package.json*__, en donde se gestionan las dependencias de desarrollo y ejecución del proyecto en forma de paquetes	de los que se indica la dependencia.La salida es la que se muestra al final.
 
 Desde Visual Studio Code, es posible abrir un directorio, en este caso, lo haremos con *hello-world*, para, desde el menú __*File*__, en el desplegable seleccionamos la opción __*Open Folder*__ y nuestro directorio, seguidamente se abrirá una instancia y podremos ver el contenido de dicho directorio.
-
-![]()
 
 También es posible añadir el directorio a un espacio de trabajo (*workspace*). Para ello, en el menú __*File*__ nos vamos a  la opción __*Add folder to workspace*__, seleccionando el directorio propiamente nombrado.
 
