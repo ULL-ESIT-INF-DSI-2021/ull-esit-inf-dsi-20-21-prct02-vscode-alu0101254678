@@ -6,7 +6,7 @@ __*Contenidos del informe*__
 __*Pasos realizados para el desarrollo de la práctica*__
 * Algunas tareas a realizar previamente:
 	* Aceptar la tarea asignada a [GitHub Classroom](https://classroom.github.com/assignment-invitations/aeecb6b9d939b7fd914ea3c40d832362/status) asociada a esta práctica.
-	* Leer la [introducción a Markdown](https://guides.github.com/features/mastering-markdown/).Este es el lenguaje que se usará en el desarrollo del presente informe.
+	* Leer la [introducción a Markdown](https://guides.github.com/features/mastering-markdown/). Este es el lenguaje que se usará en el desarrollo del presente informe.
 	* Lectura del recurso [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages), ya que el presente informe se presentará a modo de una página web de GitHub.
       
 ## __Introducción y Objetivos__
@@ -15,7 +15,7 @@ En esta práctica llevaremos a cabo la instalación y la configuración del ento
 Cuando finalicemos el desarrollo tendremos a punto el IDE para ayudarnos a realizar las siguientes prácticas.
 
 ## __Instalación y funcionalidad de Visual Studio Code__
-El entorno de desarrollo que vamos a usar en las prácticas es [Visual Studio Code](https://code.visualstudio.com/).Lo primero que deberemos hacer será [instalarlo](https://code.visualstudio.com/docs/setup/setup-overview) en nuestra máquina local.
+El entorno de desarrollo que vamos a usar en las prácticas es [Visual Studio Code](https://code.visualstudio.com/). Lo primero que deberemos hacer será [instalarlo](https://code.visualstudio.com/docs/setup/setup-overview) en nuestra máquina local.
 
 Si tuvieramos una distribución Linux *Debian/Ubuntu* la instalación se reduciría a los siguientes comandos en una terminal:
 
@@ -36,7 +36,7 @@ Una vez que tenemos code instalado podemos ejecutarlo en el escritorio o en el m
 Este es el aspecto que tendría code según lo ejecutamos.
 
 ![captura_code_1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/raw/master/img/captura_code_1.png)
-
+* __Captura de la interfaz de Visual Studio Code__
 
 ## __Conexión a una máquina virtual ssh con Visual Studio Code__
 Vamos a llevar a cabo la configuración necesaria para [conectarnos](https://code.visualstudio.com/docs/remote/ssh-tutorial) desde Visual Studio Code a la máquina virtual del *IaaS*, a través de una conexión *ssh*.
@@ -47,10 +47,11 @@ Sin embargo también podemos hacerlo desde Visual Studio Code, a través de una 
 
 Una extensión es una funcionalidad que se puede añadir a Visual Studio Code, nosotros vamos a instalar __Remote SSH__:
 ![captura_code_3](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/master/img/captura_code_3.png)
+* __Captura de la extensión Remote-ssh__
 
 Seguidamente, deberemos pulsar la tecla __F1__ o la combinación de teclas __Ctrl + Shift + P__, en el menú desplegable escribimos la orden __ssh__ y después __Connect to host...__.
 
-Recordamos de la anterior práctica que ya habíamos configurado el fichero que contenía la configuración de *ssh*, de ahí que podamos seleccionar el nombre que se indica de la máquina virtual. 
+Recordamos de la anterior [práctica](https://ull-esit-inf-dsi-2021.github.io/ull-esit-inf-dsi-20-21-prct01-iaas-alu0101254678/) que ya habíamos configurado el fichero que contenía la configuración de *ssh*, de ahí que podamos seleccionar el nombre que se indica de la máquina virtual. 
 
 En el caso de que no suceda lo anterior, podemos pulsar sobre la opción __Configure SSH Hosts...__ y elegimos la opción __~/.ssh/config__, incluyendo las siguientes líneas:
 
@@ -59,7 +60,7 @@ Host iaas-dsi15
   HostName iaas-dsi15
   User usuario
 ```
-Como vemos la máquina es *iaas-dsi-15* que es la que nos había asignado el *iaas* y el usuario no lo hemos cambiado, sino que lo hemos dejado por defecto.Sin embargo, para cada máquina esta tendrá un nombre distinto.
+Como vemos el nombre de la máquina que habíamos elegido en nuestro caso es *iaas-dsi-15* que es la que nos había asignado el *iaas* y el usuario no lo hemos cambiado, sino que lo hemos dejado por defecto. Sin embargo, para cada máquina podemos añadir un nombre distinto.
 
 Una vez seguidos estos pasos, lo siguiente será la opción __Connect to Host__ cuando volvamos a abrir el menú desplegable con __F1__, en este caso seleccionamos la máquina virtual, y nuestras credenciales, esto es, la contraseña para el usuario que hemos añadido en el fichero de configuración anterior.
 
@@ -74,12 +75,13 @@ iaas-dsi15
 Como se puede observar, dicho comando devuelve el nombre de host de la máquina virtual remota. En la esquina inferior izquierda, se puede observar el nombre de la máquina virtual al que estamos concetados.
 
 ![captura_code_4](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/master/img/captura_code_4.png)
+* Captura del editor de texto de Visual Studio
 
 ## __Live Share en Visual Studio Code (sesiones colaborativas)__
 
 Visual Studio Code permite trabajar con otras personas en tiempo real, gracias a la extensión [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) que se puede instalar desde Visual Studio Code.
 
-Cuando nos encontramos en una sesión remota, las extensiones que instalamos desde Code, se quedan ahí, es decir, en la máquina remota, por lo tanto no debemos olvidar en qué lugar estamos instalando las extensiones.
+Cuando nos encontramos en una sesión remota, las extensiones que instalamos desde Code, permanecen en la máquina remota, por lo tanto no debemos olvidar en qué lugar estamos instalando las extensiones.
 
 Para instalar una extensión en la máquina local, primero deberemos desconectarnos de la máquina remota, y posteriormente en nuestra máquina podemos proceder a las instalaciones.
 
@@ -90,13 +92,14 @@ Ahora podemos iniciar una sesión colaborativa con otras personas.
 Antes de nada, vamos a proceder con la instalación de dos extensiones que resultan muy útiles:
 
 * Vim. En el caso de que prefiramos el editor de texto.
-* ESlint. Permite realizar comprobaciones de estilo sobre ficheros en los que se incluya código fuente de JavaScript y TipeScript.
+* ESlint. Permite realizar comprobaciones de estilo sobre ficheros en los que se incluya código fuente de JavaScript y TypeScript.
 
 Para ello, seguimos los pasos llevados para la instalación de otras extensiones, sin embargo, en el buscador tendremos que escribir *Vim* y *ESLint* y hacer click sobre *install*.
 
 ![captura_extension_vim](https://raw.githubusercontent.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/master/img/captura_extension_vim.png)
+* Captura de la extensión Vim en Code
 
-Ahora, instalamos el compilador de *Typescript*, recordemos que no solo se trata de un lenguaje de programación, sino que también cumple las funciones de compilador.Para la instalación usaremos __npm__ que es el gestor de paquetes de *Node*.
+Ahora, instalamos el compilador de *Typescript*, recordemos que no solo se trata de un lenguaje de programación, sino que también cumple las funciones de compilador. Para la instalación usaremos __npm__ que es el gestor de paquetes de *Node*.
 
 ```markdown
 [~/ull-esit-inf-dsi-20-21-prct02-vscode-alu0101254678/docs(master)]$npm install --global typescript
@@ -145,15 +148,15 @@ drwxrwxr-x  2 usuario usuario 4,0K feb 25 17:53 .
 
 Con el comando *pwd* comprobamos el directorio en el que nos encontramos, seguidamente creamos con *mkdir* un directorio llamado *hello-world* que servirá para nuestro primer proyecto de prueba.
 
-Nos movemos a dicho directorio, y escribimos el comando __*npm init --yes*__ lo que inicia la creación de un fichero llamado __*package.json*__, en donde se gestionan las dependencias de desarrollo y ejecución del proyecto en forma de paquetes	de los que se indica la dependencia.La salida es la que se muestra al final.
+Nos movemos a dicho directorio, y escribimos el comando __*npm init --yes*__ lo que inicia la creación de un fichero llamado __*package.json*__, en donde se gestionan las dependencias de desarrollo y ejecución del proyecto en forma de paquetes	de los que se indica dicha dependencia. La salida es la que se muestra al final.
 
-Desde Visual Studio Code, es posible abrir un directorio, en este caso, lo haremos con *hello-world*, para, desde el menú __*File*__, en el desplegable seleccionamos la opción __*Open Folder*__ y nuestro directorio, seguidamente se abrirá una instancia y podremos ver el contenido de dicho directorio.
+Desde Visual Studio Code, es posible abrir un directorio y trabajar con él, en este caso, lo haremos con *hello-world*, entonces, desde el menú __*File*__, en el desplegable seleccionamos la opción __*Open Folder*__ y nuestro directorio, seguidamente se abrirá una instancia y podremos ver el contenido de dicho directorio.
 
 También es posible añadir el directorio a un espacio de trabajo (*workspace*). Para ello, en el menú __*File*__ nos vamos a  la opción __*Add folder to workspace*__, seleccionando el directorio propiamente nombrado.
 
 En el caso de que no tengamos ningún espacio de trabajo creado previamente, se creará uno nuevo y se añadirá el directorio al mismo. Para guardar el espacio de trabajo se puede hacer seleccionando la opción __*Save Workspace as...*__ del menú __*File*__, escribiendo un nombre de fichero y pulsando sobre el botón __*OK*__.
 
-Creamos un nuevo fichero en el directorio *hello-world*, llamado __*tsconfig.json*__. Es posible hacerlo mediante la terminal de VS Code o el explorador situado a la izquierda.En este fichero es en donde se indican las opciones del compilador de Typscript.Vamos a incluir las siguientes líneas en dicho fichero y a pasar a explicarlas.
+Creamos un nuevo fichero en el directorio *hello-world*, llamado __*tsconfig.json*__. Es posible hacerlo mediante la terminal de *VS Code* o el explorador situado a la izquierda. En este fichero es en donde se indican las opciones del compilador de Typscript. Vamos a incluir las siguientes líneas en dicho fichero y a pasar a explicarlas.
 
 ```markdown
 [~/hello-world()]$vim tsconfig.json 
@@ -175,7 +178,7 @@ En segundo lugar, especificamos el directorio de salida de los ficheros que gene
 
 Por último, se indica un estándar para cargar código fuente desde ficheros independientes.
 
-Ahora, añadiremos un fichero con código en *TypeScript*.Ejecutamos los siguientes comandos en la terminal de VS Code:
+Ahora, añadiremos un fichero con código en *TypeScript*. Ejecutamos los siguientes comandos en la terminal de VS Code:
 ```markdown
 [~/hello-world()]$pwd
 /home/usuario/hello-world
@@ -218,7 +221,7 @@ Una de las características de *TypeScript*, es la declaración de datos estáti
 
 De esta forma se pueden evitar los problemas que ocurren cuando el tipo de una variable se decide en tiempo de ejecución, como sucede en *JavaScript*.
 
-Por último, solo nos queda ejecutar el fichero que se ha generado tras la compilación, __*index,js*__, que, recordemos que podemos ejecutarlo.
+Por último, solo nos queda ejecutar el fichero que se ha generado tras la compilación, __*index,js*__, que, recordemos que podemos ejecutarlo, ya que disponemos del entorno de ejecución *node*.
 
 Esto se realiza con el comando *node* y la ruta al fichero.
 
@@ -229,10 +232,52 @@ Hola Mundo
 ```
 
 ## __Conclusiones__
+Tanto la práctica anterior como la presente, han servido para aprender a manejar herramientas que hoy en día emplean los desarrolladores, nosotros vamos
+a intentar aprender a utilizar buenas prácticas y técnicas, así como a meternos en un nuevo lenguaje de programación, en concreto en esta práctica, como
+hemos visto, hemos visto como funciona de forma genérica Visual Studio Code.
+
+Este entorno de desarrollo es muy potente, y tiene unas características que merece la pena comentar, como la integración con Github, el extenso marco de
+extensiones disponible, y las sesiones colaborativas en tiempo real, como aspectos interesantes, entre otros.
+
+Por último, hemos visto por encima, como se crea un proyecto en typescript, y como se edita su cofiguración, compilación y generación del código fuente.
+
+Hemos encontrado pequeñas dificultades, como problemas en la red, en las explicaciones del profesor en el aula, aunque no afectaban de mucha manera en el 
+desarrollo de esta práctica, además parece que el IaaS a veces experimenta algunos problemas y se plantea hacer el desarrollo de la práctica en la máquina
+local.
+
+Sin embargo, consideramos conveniente que todos los alumnos trabajen más o menos de forma homogénea, en un entorno como es el de las máquinas remotas que 
+nos proporciona el Stic de la ULL
 
 ## __Bibliografía__
+Enlaces que nos ha proporcionado el profesor en el desarrollo de la práctica, para aprender sobre todo con *Visual Studio Code*:
 
+*Una vista al aprendizaje con Visual Studio Code*
 
+1. [Componentes adicionales](https://code.visualstudio.com/docs/setup/additional-components)
+2. [Interfaz de usuario](https://code.visualstudio.com/docs/getstarted/userinterface)
+3. [Edición básica](https://code.visualstudio.com/docs/editor/codebasics)
+4. [Tienda de extensiones](https://code.visualstudio.com/docs/editor/extension-gallery)
+5. [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)
+6. [Navegación de código](https://code.visualstudio.com/docs/editor/editingevolved)
+7. [Depuración](https://code.visualstudio.com/docs/editor/debugging)
+8. [Control de versiones](https://code.visualstudio.com/docs/editor/versioncontrol)
+9. [Trabajando con GitHub](https://code.visualstudio.com/docs/editor/github)
+10. [Terminal integrada](https://code.visualstudio.com/docs/editor/integrated-terminal)
+11. [Tareas](https://code.visualstudio.com/docs/editor/tasks)
+12. [Fragmentos](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+13. ["Hormiga"](https://code.visualstudio.com/docs/editor/emmet)
+14. [Línea de comandos](https://code.visualstudio.com/docs/editor/command-line)
+15. [Espaicios de trabajo](https://code.visualstudio.com/docs/editor/multi-root-workspaces)
+16. [Accesibilidad](https://code.visualstudio.com/docs/editor/accessibility)
+
+*Aprendizaje en TypeScript*
+
+* [TypeScript esencial, desde principiante a experto](https://www.oreilly.com/library/view/essential-typescript-from/9781484249796/html/Part_1.xhtml)
+
+*¿Cómo se ha realizado el informe, y por qué se encunetra en una página web?*
+
+* [Aprenda a crear páginas web de GitHub](https://lab.github.com/githubtraining/github-pages)
+* [El lenguaje de marcado de texto Markdown](https://lab.github.com/githubtraining/communicating-using-markdown)
 
 
 
